@@ -48,7 +48,7 @@ jobs:
           fi
 
       - name: Image Scanner
-        uses: anchore/scan-action@v3
+        uses: anchore/scan-action@v7
         with:
           image: "${{ steps.build.outputs.name }}"
           severity-cutoff: high
